@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users New</title>
+</head>
+<body>
+
+    <h1>Add a new user</h1>
+    <form action='/create' method='post'>
+        {%csrf_token%}
+        First name:<br/>
+        <input type='text' name='first_name'><br/>
+        Last name:<br/>
+        <input type='text' name='last_name'><br/>
+        Email:<br/>
+        <input type='text' name='email'><br/>
+        <input type='submit' name='Create'>
+    </form>
+
+    <a href='/'>Go Back</a>
+    
+    
+</body>
+</html>
